@@ -1,0 +1,34 @@
+# Ignore composer dependencies
+/vendor/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore logs
+/log/
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore configuration files
+/config.php
+
+# Ignore cache files
+/cache/
+
+# Ignore session files
+/sessions/
+
+# Ignore uploaded files
+/uploads/
+
+# Ignore compiled files
+*.phpc
+*.phar
+*.phpt
+
+# Ignore composer lock file
+composer.lock
+/mysql-data/
