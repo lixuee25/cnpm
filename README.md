@@ -24,5 +24,5 @@ Link down Composer  (https://getcomposer.org/download/)
 Sau khi đã cài đặt xong. Bật Xampp để chạy Apache và Mysql.
 Tạo cơ sở dữ liệu tên "cnpm", sau đó chạy file "cnpm.sql" cho cơ sở dữ liệu dt. Còn MedicineProject thì bỏ vào folder xampp/htdocs.
 
-1. Gõ đường dẫn: http://localhost/MedicineProject/  (đây là giao diện đầu tiên của web)
-2. Để đăng nhập được vào web thì tạo tài khoản admin cho bác sĩ với tư cách là quản trị viên tạo tài khoản trong tập csdl với tên "cnpm" .Sau khi đã tạo xong tài khoản thì vào đường dẫn http://localhost/MedicineProject/src/public/dangnhap.php để đăng nhập và thực hiên các thao tác.
+1. Gõ đường dẫn: http://localhost/MedicineProject/
+3. Để đăng nhập được vào web thì tạo tài khoản admin cho bác sĩ với tư cách là quản trị viên tạo tài khoản trong tập csdl với tên "cnpm" .Sau khi đã tạo xong tài khoản thì vào đường dẫn http://localhost/MedicineProject/src/public/dangnhap.php để đăng nhập và thực hiên các thao tác.
