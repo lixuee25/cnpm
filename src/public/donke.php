@@ -80,7 +80,7 @@ $prescriptionData = getPrescriptionData($idDonThuoc);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Trang đăng nhập</title>
     <!-- Thay đổi đường dẫn của tệp CSS và hình ảnh -->
@@ -89,7 +89,7 @@ $prescriptionData = getPrescriptionData($idDonThuoc);
     <div class="container">
         <div id="header">
             <div class="logo">
-                <img src="images/logo.png" alt="">
+                <img src="./images/logo.png" alt="">
             </div>
             <div class="menu">
                 <h2>Kê đơn thuốc</h2>
@@ -155,7 +155,7 @@ $prescriptionData = getPrescriptionData($idDonThuoc);
                                 echo "<td>" . $donThuoc["donVi"] . "</td>";
                                 echo "<td>" . $donThuoc["doiTuongSuDung"] . "</td>";
                                 echo '<td>
-                                <form action="xoa.php" method="POST" onsubmit="return confirm(\'Bạn có chắc muốn xóa thuốc này không?\');">
+                                <form action="../controllers/thuoc_controller.php" method="POST" onsubmit="return confirm(\'Bạn có chắc muốn xóa thuốc này không?\');">
                                     <input type="hidden" name="idDonThuoc" value="' . $donThuoc["idDonThuoc"] . '">
                                     <input type="hidden" name="idThuoc" value="' . $donThuoc["idThuoc"] . '">
                                     <button type="submit" name="delete" style="border:none; background:none; cursor:pointer;">
@@ -178,8 +178,8 @@ $prescriptionData = getPrescriptionData($idDonThuoc);
                     </table>
                 </div>
                 <div class="bottom row">
-                    <button style="color: aliceblue;" class="nut1"> <a href="http://localhost/thicuoiki/danhsachbn.php ">Thoát</a></button>
-                    <button style="color: aliceblue;" class="nut2"><a href="http://localhost/thicuoiki/danhsachbn.php">Xuất đơn</a> </button>
+                    <button style="color: aliceblue;" class="nut1"> <a href="./danhsachbn.php">Thoát</a></button>
+                    <button style="color: aliceblue;" class="nut2"><a href="./danhsachbn.php">Xuất đơn</a> </button>
                 </div>
             </div>
             <footer>

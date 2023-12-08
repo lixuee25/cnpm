@@ -8,6 +8,7 @@ function getConnection()
         echo "Kết nối MYSQLi lỗi" . $mysqli->connect_error;
         exit();
     }
+
     return $mysqli;
 }
 ?>

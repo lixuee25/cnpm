@@ -56,11 +56,12 @@ class Admin
          $row = $result->fetch_assoc();
 
          if ($row) {
+            $pdo->close();
             return true;
         } else {
+            $pdo->close();
             return false;
         }
-        return false;
     }
 }
 ?>

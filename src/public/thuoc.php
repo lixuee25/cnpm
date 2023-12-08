@@ -45,20 +45,20 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Trang đăng nhập</title>
     <!-- Thay đổi đường dẫn của tệp CSS và hình ảnh -->
 </head>
 <body>
     <div id="header">
         <div class="logo">
-            <img src="images/logo.png" alt="">
+            <img src="./images/logo.png" alt="">
         </div>
         <div class="menu"><h2>Thuốc</h2> </div>
     </div>
     <div class="container">
         <div class="t">
-        <form class="thuoc"  action="them.php" method="GET">
+        <form class="thuoc"  action="them.php" method="GET" onsubmit="return  checkValid()">
         <input type="hidden" name="idDonThuoc" value="<?php echo $idDonThuoc; ?>">
         <!-- Assuming $availableMedications is an array of available medications -->
         <label for="idThuoc">Chọn Thuốc:</label>
@@ -109,6 +109,24 @@ $conn->close();
         </div>
     </footer>
     </div>
+
+
+    <script>
+        function checkValid() {
+            var soLuongUongTrenMotLan = document.getElementById("soLuongUongTrenMotLan").value;
+            var soLanUongTrenMotNgay = document.getElementById('soLanUongTrenMotNgay').value;
+            var donvi = document.getElementById('donvi').value;
+
+            var checkCondition = soLanUongTrenMotNgay > 3 && soLuongUongTrenMotLan > 3 && donvi == 'viên';
+            
+            if (checkCondition) {
+                alert("số liều vượt mức quy định cho phép");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 
 
 
